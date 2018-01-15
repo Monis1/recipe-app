@@ -5,7 +5,7 @@ spring:
     password: ${JDBC_DATABASE_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: validate
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
     database-platform: org.hibernate.dialect.PostgreSQL94Dialect
